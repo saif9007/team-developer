@@ -1,0 +1,195 @@
+[
+  {
+    "scheme_id": "PMKISAN",
+    "scheme_name_en": "PM-KISAN Samman Nidhi",
+    "scheme_name_hi": "प्रधानमंत्री किसान सम्मान निधि",
+    "description": "Income support scheme providing financial assistance to landholding farmer families.",
+    "eligibility_conditions": [
+      "Small and marginal landholding farmer families.",
+      "Valid land records in state revenue department."
+    ],
+    "required_documents": [
+      "Aadhaar card",
+      "Bank account details",
+      "Land ownership documents"
+    ],
+    "benefits": "Fixed amount per year directly transferred to farmer's bank account.",
+    "application_mode": "Online or through local agriculture / revenue office.",
+    "official_link": "https://pmkisan.gov.in",
+    "keywords_en": ["income support", "direct benefit", "pmkisan", "pm kisan"],
+    "keywords_hi": ["आय समर्थन", "किसान सम्मान", "पीएम किसान"]
+  },
+  {
+    "scheme_id": "PMFBY",
+    "scheme_name_en": "Pradhan Mantri Fasal Bima Yojana",
+    "scheme_name_hi": "प्रधानमंत्री फसल बीमा योजना",
+    "description": "Crop insurance scheme to protect farmers from yield loss due to natural calamities.",
+    "eligibility_conditions": [
+      "All farmers growing notified crops in notified areas.",
+      "KCC / loanee and non-loanee farmers."
+    ],
+    "required_documents": [
+      "Kisan Credit Card or bank details",
+      "Land / crop sowing details",
+      "Aadhaar card"
+    ],
+    "benefits": "Insurance coverage at low premium for crop loss.",
+    "application_mode": "Through banks, CSC centers or online portal.",
+    "official_link": "https://pmfby.gov.in",
+    "keywords_en": ["insurance", "crop loss", "flood", "drought", "hailstorm"],
+    "keywords_hi": ["फसल बीमा", "नुकसान", "ओलावृष्टि", "सूखा"]
+  },
+  {
+    "scheme_id": "PKVY",
+    "scheme_name_en": "Paramparagat Krishi Vikas Yojana",
+    "scheme_name_hi": "परंपरागत कृषि विकास योजना",
+    "description": "Scheme to promote organic farming through cluster approach.",
+    "eligibility_conditions": [
+      "Farmer groups willing to adopt organic farming.",
+      "Cluster based participation."
+    ],
+    "required_documents": [
+      "Farmer group details",
+      "Land records",
+      "Bank details"
+    ],
+    "benefits": "Financial assistance for organic inputs, certification and marketing.",
+    "application_mode": "Through state agriculture department.",
+    "official_link": "https://pgsindia-ncof.gov.in",
+    "keywords_en": ["organic", "organic farming", "cluster", "paramparagat"],
+    "keywords_hi": ["जैविक", "ऑर्गेनिक खेती", "परंपरागत"]
+  },
+  {
+    "scheme_id": "PMKSY",
+    "scheme_name_en": "Pradhan Mantri Krishi Sinchai Yojana",
+    "scheme_name_hi": "प्रधानमंत्री कृषि सिंचाई योजना",
+    "description": "Scheme for water conservation, micro-irrigation and 'more crop per drop'.",
+    "eligibility_conditions": [
+      "Farmers adopting drip or sprinkler irrigation.",
+      "Priority to water scarce areas."
+    ],
+    "required_documents": [
+      "Land documents",
+      "Irrigation system details",
+      "Bank account"
+    ],
+    "benefits": "Subsidy on micro-irrigation systems and water harvesting structures.",
+    "application_mode": "Through state irrigation / agriculture department.",
+    "official_link": "https://pmksy.gov.in",
+    "keywords_en": ["irrigation", "drip", "sprinkler", "water saving"],
+    "keywords_hi": ["सिंचाई", "ड्रिप", "स्प्रिंकलर", "पानी बचत"]
+  },
+  {
+    "scheme_id": "NMSA",
+    "scheme_name_en": "National Mission for Sustainable Agriculture",
+    "scheme_name_hi": "राष्ट्रीय सतत कृषि मिशन",
+    "description": "Mission to promote climate resilient agriculture practices.",
+    "eligibility_conditions": [
+      "Farmers in climate vulnerable regions.",
+      "Adoption of conservation agriculture practices."
+    ],
+    "required_documents": [
+      "Land records",
+      "Bank details"
+    ],
+    "benefits": "Assistance for water use efficiency, soil health and climate smart practices.",
+    "application_mode": "Through district agriculture offices.",
+    "official_link": "https://agricoop.nic.in",
+    "keywords_en": ["climate", "sustainable", "soil health", "rainfed"],
+    "keywords_hi": ["जलवायु", "सतत", "मृदा स्वास्थ्य", "सूखी खेती"]
+  },
+  {
+    "scheme_id": "SHC",
+    "scheme_name_en": "Soil Health Card Scheme",
+    "scheme_name_hi": "मृदा स्वास्थ्य कार्ड योजना",
+    "description": "Scheme to provide soil test based nutrient recommendations to farmers.",
+    "eligibility_conditions": [
+      "All farmers with cultivable land."
+    ],
+    "required_documents": [
+      "Land details",
+      "Farmer identity proof"
+    ],
+    "benefits": "Soil testing and personalized fertilizer recommendation card.",
+    "application_mode": "Through soil testing labs and agriculture offices.",
+    "official_link": "https://soilhealth.dac.gov.in",
+    "keywords_en": ["soil test", "fertilizer recommendation", "soil health card"],
+    "keywords_hi": ["मिट्टी परीक्षण", "मृदा स्वास्थ्य कार्ड", "खाद सुझाव"]
+  },
+  {
+    "scheme_id": "KCC",
+    "scheme_name_en": "Kisan Credit Card",
+    "scheme_name_hi": "किसान क्रेडिट कार्ड",
+    "description": "Credit facility to meet short term credit needs for cultivation.",
+    "eligibility_conditions": [
+      "Farmers with cultivable land / tenant farmers / sharecroppers."
+    ],
+    "required_documents": [
+      "Land records or tenancy proof",
+      "Identity proof",
+      "Bank documents"
+    ],
+    "benefits": "Timely and adequate credit at lower interest rates.",
+    "application_mode": "Through banks and cooperative societies.",
+    "official_link": "https://pmkisan.gov.in/kcc",
+    "keywords_en": ["credit", "loan", "kcc", "working capital"],
+    "keywords_hi": ["कर्ज", "ऋण", "किसान क्रेडिट", "किसान कार्ड"]
+  },
+  {
+    "scheme_id": "MIDH",
+    "scheme_name_en": "Mission for Integrated Development of Horticulture",
+    "scheme_name_hi": "उद्यानिकी समन्वित विकास मिशन",
+    "description": "Support for horticulture crops like fruits, vegetables, spices, flowers.",
+    "eligibility_conditions": [
+      "Farmers engaged in horticulture crop cultivation."
+    ],
+    "required_documents": [
+      "Land records",
+      "Project proposal where required",
+      "Bank details"
+    ],
+    "benefits": "Assistance for planting material, irrigation and post-harvest infrastructure.",
+    "application_mode": "Through horticulture department.",
+    "official_link": "https://midh.gov.in",
+    "keywords_en": ["horticulture", "fruits", "vegetables", "floriculture"],
+    "keywords_hi": ["उद्यानिकी", "फल", "सब्जी", "फूल"]
+  },
+  {
+    "scheme_id": "SMAM",
+    "scheme_name_en": "Sub-Mission on Agricultural Mechanization",
+    "scheme_name_hi": "कृषि यंत्रीकरण उप-मिशन",
+    "description": "Promotes use of farm machinery through subsidy.",
+    "eligibility_conditions": [
+      "Individual farmers, groups and custom hiring centers."
+    ],
+    "required_documents": [
+      "Identity and land records",
+      "Quotation for machinery",
+      "Bank details"
+    ],
+    "benefits": "Subsidy for purchase of tractors, power tillers and other implements.",
+    "application_mode": "Through agriculture / machinery departments.",
+    "official_link": "https://agricoop.nic.in",
+    "keywords_en": ["machinery", "tractor", "equipment", "mechanization"],
+    "keywords_hi": ["यंत्रीकरण", "ट्रैक्टर", "उपकरण", "मशीनरी"]
+  },
+  {
+    "scheme_id": "MKSP",
+    "scheme_name_en": "Mahila Kisan Sashaktikaran Pariyojana",
+    "scheme_name_hi": "महिला किसान सशक्तिकरण परियोजना",
+    "description": "Empowers women farmers through skill development and support.",
+    "eligibility_conditions": [
+      "Women farmers and self-help groups.",
+      "Participation through NRLM platform."
+    ],
+    "required_documents": [
+      "SHG membership details",
+      "Identity proof"
+    ],
+    "benefits": "Capacity building, livelihood support and access to resources.",
+    "application_mode": "Through NRLM / state rural livelihood missions.",
+    "official_link": "https://aajeevika.gov.in",
+    "keywords_en": ["women farmer", "women empowerment", "mksp", "shg"],
+    "keywords_hi": ["महिला किसान", "महिला समूह", "स्वयं सहायता", "सशक्तिकरण"]
+  }
+]

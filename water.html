@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Water System – Kisan Sathi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="water">
+  <div class="app-shell">
+    <header class="app-header simple">
+      <button class="back-btn" onclick="navigateTo('index.html')">←</button>
+      <div>
+        <h1 class="app-title">Smart Irrigation Planner</h1>
+        <p class="app-subtitle">Use water wisely, grow more</p>
+      </div>
+    </header>
+
+    <main class="app-main scrollable">
+      <section class="card">
+        <h3>Enter Farm Details</h3>
+        <form onsubmit="calculateWater(event)" class="water-form">
+          <label>
+            Land Size (in acres)
+            <input type="number" id="waterLand" min="0" step="0.1" required />
+          </label>
+
+          <label>
+            Crop Type
+            <select id="waterCrop">
+              <option value="wheat">Wheat</option>
+              <option value="rice">Rice (Paddy)</option>
+              <option value="cotton">Cotton</option>
+              <option value="vegetables">Vegetables</option>
+            </select>
+          </label>
+
+          <label>
+            Soil Type
+            <select id="waterSoil">
+              <option value="sandy">Sandy (water drains fast)</option>
+              <option value="loamy">Loamy (medium)</option>
+              <option value="clay">Clay (holds water)</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn-primary full-width">
+            Get Irrigation Plan
+          </button>
+        </form>
+      </section>
+
+      <section id="waterResultSection" class="card" hidden>
+        <h3>Irrigation Recommendation</h3>
+        <p id="waterAmount"></p>
+        <p id="waterSchedule"></p>
+
+        <div class="water-bar-wrapper">
+          <span>Water Usage vs Ideal</span>
+          <div class="water-bar">
+            <div id="waterBarFill" class="water-bar-fill"></div>
+          </div>
+          <small id="waterBarLabel"></small>
+        </div>
+
+        <h4>Water Saving Tips</h4>
+        <ul class="simple-list" id="waterTips"></ul>
+      </section>
+
+      <section class="card">
+        <h3>Simple Visual Chart (Demo)</h3>
+        <div class="chart-demo">
+          <div class="chart-bar">
+            <div class="chart-bar-inner chart-high"></div>
+            <span>Flood Irrigation</span>
+          </div>
+          <div class="chart-bar">
+            <div class="chart-bar-inner chart-medium"></div>
+            <span>Sprinkler</span>
+          </div>
+          <div class="chart-bar">
+            <div class="chart-bar-inner chart-low"></div>
+            <span>Drip</span>
+          </div>
+        </div>
+        <p class="info-text small">
+          Drip irrigation uses the least water and gives better yield for many crops.
+        </p>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item" onclick="navigateTo('index.html')">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('chat.html')">
+        <span class="nav-icon">🤖</span>
+        <span class="nav-label">AI Chat</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('crops.html')">
+        <span class="nav-icon">🌾</span>
+        <span class="nav-label">Crops</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('schemes.html')">
+        <span class="nav-icon">🏛️</span>
+        <span class="nav-label">Schemes</span>
+      </button>
+      <button class="nav-item active" onclick="navigateTo('water.html')">
+        <span class="nav-icon">💧</span>
+        <span class="nav-label">Water</span>
+      </button>
+    </nav>
+  </div>
+</body>
+</html>

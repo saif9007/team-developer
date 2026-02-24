@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crop Diseases – Kisan Sathi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="disease">
+  <div class="app-shell">
+    <header class="app-header simple">
+      <button class="back-btn" onclick="navigateTo('index.html')">←</button>
+      <div>
+        <h1 class="app-title">Crop Disease Help</h1>
+        <p class="app-subtitle">Describe problem and get quick guidance</p>
+      </div>
+    </header>
+
+    <main class="app-main scrollable">
+      <section class="card">
+        <h3>Describe or Upload Crop Image</h3>
+        <p class="info-text small">
+          Type symptoms in simple Hindi/English like “गेहूं की पत्तियों पर yellow spots आ रहे हैं”.
+        </p>
+
+        <textarea
+          id="diseaseDescribe"
+          rows="4"
+          placeholder="Example: गेहूं की पत्तियों पर पीले दाग और सुखापन दिख रहा है..."
+        ></textarea>
+
+        <label class="file-upload">
+          <span>📷 Upload Crop Photo (demo only)</span>
+          <input
+            type="file"
+            accept="image/*"
+            onchange="handleDiseaseImageUpload(event)"
+          />
+        </label>
+
+        <button class="btn-primary full-width" onclick="analyzeDisease()">
+          Analyze Disease (Demo)
+        </button>
+      </section>
+
+      <section class="card ai-result" id="diseaseResult" hidden>
+        <h3>Possible Issue & Suggestions</h3>
+        <p class="ai-tag">AI-style suggestion (offline demo)</p>
+        <div id="diseaseContent"></div>
+      </section>
+
+      <section class="card">
+        <h3>Common Crop Diseases</h3>
+
+        <div class="disease-card">
+          <h4>Yellow Rust – Wheat (गेहूं)</h4>
+          <p><strong>Symptoms:</strong> Yellow stripes / spots on leaves, powdery rust.</p>
+          <p><strong>Solution:</strong> Use rust-resistant varieties, avoid late sowing, and spray recommended fungicide after consulting local expert.</p>
+        </div>
+
+        <div class="disease-card">
+          <h4>Blast – Rice (धान)</h4>
+          <p><strong>Symptoms:</strong> Spindle-shaped brown spots with grey center on leaves and neck.</p>
+          <p><strong>Solution:</strong> Avoid excess urea, maintain drainage, and use recommended fungicide like Tricyclazole on advice.</p>
+        </div>
+
+        <div class="disease-card">
+          <h4>Late Blight – Potato (आलू)</h4>
+          <p><strong>Symptoms:</strong> Dark brown blight on leaves, rapid rotting in cool, wet weather.</p>
+          <p><strong>Solution:</strong> Avoid overhead irrigation in evening, remove infected leaves, use fungicide as per recommendation.</p>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item" onclick="navigateTo('index.html')">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('chat.html')">
+        <span class="nav-icon">🤖</span>
+        <span class="nav-label">AI Chat</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('crops.html')">
+        <span class="nav-icon">🌾</span>
+        <span class="nav-label">Crops</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('schemes.html')">
+        <span class="nav-icon">🏛️</span>
+        <span class="nav-label">Schemes</span>
+      </button>
+      <button class="nav-item active" onclick="navigateTo('disease.html')">
+        <span class="nav-icon">🦠</span>
+        <span class="nav-label">Disease</span>
+      </button>
+    </nav>
+  </div>
+</body>
+</html>

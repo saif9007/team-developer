@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Profile – Kisan Sathi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="profile">
+  <div class="app-shell">
+    <header class="app-header simple">
+      <button class="back-btn" onclick="navigateTo('index.html')">←</button>
+      <div>
+        <h1 class="app-title">Farmer Profile</h1>
+        <p class="app-subtitle">Login or create new account</p>
+      </div>
+    </header>
+
+    <main class="app-main scrollable">
+      <section class="card">
+        <div class="tabs">
+          <button class="tab active" data-tab="login" onclick="switchAuthTab('login')">Login</button>
+          <button class="tab" data-tab="signup" onclick="switchAuthTab('signup')">Sign Up</button>
+        </div>
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm" class="auth-form" onsubmit="handleLogin(event)">
+          <label>
+            Mobile Number
+            <input type="tel" id="loginMobile" placeholder="Enter mobile number" required />
+          </label>
+
+          <label>
+            Password
+            <input type="password" id="loginPassword" placeholder="Enter password" required />
+          </label>
+
+          <button type="submit" class="btn-primary full-width">
+            Login
+          </button>
+
+          <p class="info-text small">
+            Demo only – no real backend. Details are stored temporarily in browser.
+          </p>
+        </form>
+
+        <!-- SIGNUP FORM -->
+        <form id="signupForm" class="auth-form" onsubmit="handleSignup(event)" hidden>
+          <label>
+            Full Name
+            <input type="text" id="signupName" placeholder="Your name" required />
+          </label>
+
+          <label>
+            Village / City
+            <input type="text" id="signupVillage" placeholder="Your village" required />
+          </label>
+
+          <label>
+            Mobile Number
+            <input type="tel" id="signupMobile" placeholder="Enter mobile number" required />
+          </label>
+
+          <label>
+            Password
+            <input type="password" id="signupPassword" placeholder="Create password" required />
+          </label>
+
+          <label>
+            Type of Farmer
+            <select id="signupType" required>
+              <option value="small">Small / Marginal</option>
+              <option value="medium">Medium</option>
+              <option value="large">Large</option>
+            </select>
+          </label>
+
+          <button type="submit" class="btn-primary full-width">
+            Create Account
+          </button>
+
+          <p class="info-text small">
+            In real app this will connect to secure server. Here it’s only for hackathon demo.
+          </p>
+        </form>
+
+        <div id="authMessage" class="elig-result"></div>
+      </section>
+
+      <section class="card">
+        <h3>Your Demo Profile</h3>
+        <p class="info-text small">
+          After signup, basic info is kept in this browser only. You can use it to show personalized dashboard in your presentation.
+        </p>
+        <button class="btn-outline full-width" onclick="showDemoProfile()">
+          Show Saved Profile (Demo)
+        </button>
+        <div id="profilePreview" class="elig-result"></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item" onclick="navigateTo('index.html')">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('chat.html')">
+        <span class="nav-icon">🤖</span>
+        <span class="nav-label">AI Chat</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('crops.html')">
+        <span class="nav-icon">🌾</span>
+        <span class="nav-label">Crops</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('schemes.html')">
+        <span class="nav-icon">🏛️</span>
+        <span class="nav-label">Schemes</span>
+      </button>
+      <button class="nav-item active" onclick="navigateTo('profile.html')">
+        <span class="nav-icon">👤</span>
+        <span class="nav-label">Profile</span>
+      </button>
+    </nav>
+  </div>
+</body>
+</html>

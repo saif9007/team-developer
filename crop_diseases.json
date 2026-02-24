@@ -1,0 +1,152 @@
+[
+  {
+    "crop_name": "wheat",
+    "crop_name_hi": "गेहूं",
+    "disease_name": "Yellow Rust",
+    "disease_name_hi": "पीला रतुआ",
+    "symptoms_keywords_en": ["yellowing", "yellow stripes", "rust", "powder", "leaf"],
+    "symptoms_keywords_hi": ["पीलापन", "पीली धारियाँ", "रतुआ", "पीला धब्बा"],
+    "recommended_medicine": "Propiconazole 25 EC @ 0.1% (consult local agri officer for dose)",
+    "organic_solution": "Spray neem oil extract (3%) and maintain balanced nutrition.",
+    "prevention_steps": [
+      "Use rust-resistant wheat varieties.",
+      "Avoid late sowing.",
+      "Remove and destroy heavily infected plants."
+    ]
+  },
+  {
+    "crop_name": "wheat",
+    "crop_name_hi": "गेहूं",
+    "disease_name": "Loose Smut",
+    "disease_name_hi": "ढीला कुंज",
+    "symptoms_keywords_en": ["ears", "spike", "black powder", "smut", "grains replaced"],
+    "symptoms_keywords_hi": ["काला चूरा", "काले दाने", "बालियों में काला"],
+    "recommended_medicine": "Treat seed with Carboxin or Tebuconazole as per recommendation.",
+    "organic_solution": "Use hot water seed treatment (soaking seeds in warm water) under expert guidance.",
+    "prevention_steps": [
+      "Always use certified, disease-free seed.",
+      "Follow seed treatment before sowing.",
+      "Avoid saving seed from infected fields."
+    ]
+  },
+  {
+    "crop_name": "rice",
+    "crop_name_hi": "धान",
+    "disease_name": "Blast",
+    "disease_name_hi": "झुलसा रोग",
+    "symptoms_keywords_en": ["leaf blast", "spots", "grey center", "spindle shape", "neck blast"],
+    "symptoms_keywords_hi": ["धब्बे", "भूरे धब्बे", "पत्तों पर दाग", "नेक ब्लास्ट"],
+    "recommended_medicine": "Tricyclazole 75 WP @ recommended dose (consult local expert).",
+    "organic_solution": "Apply fermented buttermilk spray and maintain proper spacing.",
+    "prevention_steps": [
+      "Avoid excess nitrogen fertilizer.",
+      "Maintain proper plant spacing and field drainage.",
+      "Use resistant varieties where available."
+    ]
+  },
+  {
+    "crop_name": "rice",
+    "crop_name_hi": "धान",
+    "disease_name": "Bacterial Leaf Blight",
+    "disease_name_hi": "बैक्टीरियल झुलसा",
+    "symptoms_keywords_en": ["leaf blight", "burnt", "yellowing from tip", "wilt"],
+    "symptoms_keywords_hi": ["झुलसा", "सिरों से सूखना", "टिप से सूखना"],
+    "recommended_medicine": "Copper-based bactericides as per recommendation.",
+    "organic_solution": "Use cow dung based jeevamrut sprays and avoid standing water for long.",
+    "prevention_steps": [
+      "Use balanced fertilizer, avoid too much urea.",
+      "Do not allow water to move from infected to healthy fields.",
+      "Use disease-free seed and resistant varieties."
+    ]
+  },
+  {
+    "crop_name": "maize",
+    "crop_name_hi": "मक्का",
+    "disease_name": "Leaf Blight",
+    "disease_name_hi": "पत्ती झुलसा",
+    "symptoms_keywords_en": ["brown spots", "lesions", "leaf blight", "dry leaves"],
+    "symptoms_keywords_hi": ["भूरे दाग", "पत्ती पर दाग", "पत्ती सूखना"],
+    "recommended_medicine": "Mancozeb or similar fungicide as per recommendation.",
+    "organic_solution": "Apply compost tea and maintain crop rotation.",
+    "prevention_steps": [
+      "Use crop rotation with non-host crops.",
+      "Avoid water stress and nutrient deficiency.",
+      "Use resistant hybrids if available."
+    ]
+  },
+  {
+    "crop_name": "maize",
+    "crop_name_hi": "मक्का",
+    "disease_name": "Stem Borer (Pest)",
+    "disease_name_hi": "तना छेदक कीड़ा",
+    "symptoms_keywords_en": ["dead heart", "holes in stem", "bore", "pest", "larva"],
+    "symptoms_keywords_hi": ["सूखी शीर्ष", "डेड हार्ट", "तना छेदक", "कीड़ा"],
+    "recommended_medicine": "Apply recommended insecticide like Chlorantraniliprole (consult expert).",
+    "organic_solution": "Use light traps and release Trichogramma parasitoids where available.",
+    "prevention_steps": [
+      "Collect and destroy affected dead hearts.",
+      "Avoid continuous maize cropping on same field.",
+      "Use timely sowing and balanced fertilization."
+    ]
+  },
+  {
+    "crop_name": "potato",
+    "crop_name_hi": "आलू",
+    "disease_name": "Late Blight",
+    "disease_name_hi": "झुलसा रोग",
+    "symptoms_keywords_en": ["brown spots", "water soaked", "leaf blight", "white fungal growth"],
+    "symptoms_keywords_hi": ["पत्तों पर भूरे धब्बे", "झुलसा", "पत्ती सड़ना"],
+    "recommended_medicine": "Systemic fungicides like Metalaxyl + Mancozeb as per dose.",
+    "organic_solution": "Use copper-based organic formulations and maintain good aeration.",
+    "prevention_steps": [
+      "Avoid overhead irrigation in late evening.",
+      "Destroy infected plant debris after harvest.",
+      "Use certified, disease-free seed tubers."
+    ]
+  },
+  {
+    "crop_name": "potato",
+    "crop_name_hi": "आलू",
+    "disease_name": "Early Blight",
+    "disease_name_hi": "प्रारंभिक झुलसा",
+    "symptoms_keywords_en": ["concentric rings", "target spots", "older leaves", "brown spots"],
+    "symptoms_keywords_hi": ["गोल घेरों वाले धब्बे", "पुरानी पत्तियाँ सूखना"],
+    "recommended_medicine": "Mancozeb or Chlorothalonil based fungicide.",
+    "organic_solution": "Use neem oil spray and maintain adequate potassium nutrition.",
+    "prevention_steps": [
+      "Remove lower infected leaves early.",
+      "Avoid stress and maintain balanced nutrients.",
+      "Follow crop rotation."
+    ]
+  },
+  {
+    "crop_name": "tomato",
+    "crop_name_hi": "टमाटर",
+    "disease_name": "Leaf Curl Virus",
+    "disease_name_hi": "लीफ कर्ल",
+    "symptoms_keywords_en": ["leaf curl", "upward curling", "stunted", "yellowing", "whitefly"],
+    "symptoms_keywords_hi": ["पत्तियाँ मुड़ना", "लीफ कर्ल", "रुका हुआ विकास"],
+    "recommended_medicine": "Control whitefly vector with recommended insecticides.",
+    "organic_solution": "Use yellow sticky traps and neem oil sprays.",
+    "prevention_steps": [
+      "Use virus-free seedlings.",
+      "Remove and destroy infected plants early.",
+      "Use net houses or mulches to reduce vector entry."
+    ]
+  },
+  {
+    "crop_name": "chickpea",
+    "crop_name_hi": "चना",
+    "disease_name": "Wilt",
+    "disease_name_hi": "मुरझाना रोग",
+    "symptoms_keywords_en": ["sudden wilt", "drooping", "brown vascular", "drying plants"],
+    "symptoms_keywords_hi": ["मुरझाना", "सूख जाना", "पौधा सूखना"],
+    "recommended_medicine": "Seed treatment with Trichoderma and fungicides as advised.",
+    "organic_solution": "Use Trichoderma enriched compost and well-drained soil.",
+    "prevention_steps": [
+      "Avoid waterlogging in chickpea fields.",
+      "Use resistant varieties.",
+      "Do not grow chickpea repeatedly on same land."
+    ]
+  }
+]

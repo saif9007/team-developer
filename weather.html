@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather & Alerts – Kisan Sathi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="weather">
+  <div class="app-shell">
+    <header class="app-header simple">
+      <button class="back-btn" onclick="navigateTo('index.html')">←</button>
+      <div>
+        <h1 class="app-title">Weather & Alerts</h1>
+        <p class="app-subtitle">Plan your farm with climate</p>
+      </div>
+    </header>
+
+    <main class="app-main scrollable">
+      <section class="card">
+        <h3>Today</h3>
+        <div class="weather-main">
+          <div>
+            <div class="weather-temp" id="detailTemp">30°C</div>
+            <div class="weather-condition" id="detailCond">Sunny</div>
+            <div class="weather-location">Your Village</div>
+          </div>
+          <div class="weather-extra">
+            <div>Humidity: <span id="detailHumidity">55%</span></div>
+            <div>Rain chance: <span id="detailRain">20%</span></div>
+            <div>Wind: <span id="detailWind">8 km/h</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>3-Day Outlook (Demo)</h3>
+        <div class="forecast-grid">
+          <div class="forecast-item">
+            <div>Tomorrow</div>
+            <div>🌤️</div>
+            <div>31°C / 20°C</div>
+          </div>
+          <div class="forecast-item">
+            <div>Day 2</div>
+            <div>⛈️</div>
+            <div>28°C / 19°C</div>
+          </div>
+          <div class="forecast-item">
+            <div>Day 3</div>
+            <div>☁️</div>
+            <div>29°C / 18°C</div>
+          </div>
+        </div>
+        <p class="info-text small">
+          Data is static demo. Connect live weather API in future.
+        </p>
+      </section>
+
+      <section class="card alerts-card">
+        <h3>Alerts</h3>
+        <div class="alert alert-warning">
+          <h4>Heavy Rain Warning (Demo)</h4>
+          <p>Expected heavy rain in next 48 hours. Avoid urea application and plan drainage.</p>
+        </div>
+
+        <div class="alert alert-pest">
+          <h4>Pest Warning (Demo)</h4>
+          <p>High chances of stem borer in paddy. Monitor fields during evening and early morning.</p>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item" onclick="navigateTo('index.html')">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('chat.html')">
+        <span class="nav-icon">🤖</span>
+        <span class="nav-label">AI Chat</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('crops.html')">
+        <span class="nav-icon">🌾</span>
+        <span class="nav-label">Crops</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('schemes.html')">
+        <span class="nav-icon">🏛️</span>
+        <span class="nav-label">Schemes</span>
+      </button>
+      <button class="nav-item active" onclick="navigateTo('weather.html')">
+        <span class="nav-icon">🌦️</span>
+        <span class="nav-label">Weather</span>
+      </button>
+    </nav>
+  </div>
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Kisan Sathi – Farmer Help</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body data-page="home" class="home2">
+  <div class="app-shell">
+    <header class="app-header">
+      <div class="header-top">
+        <div>
+          <h1 class="app-title">GRAMEEN AI</h1>
+          <p class="app-subtitle">Smart farming guide for every farmer</p>
+        </div>
+        <div class="header-weather-mini">
+          <span class="icon"><i class="fa-solid fa-language"></i></span>
+          <div>
+            <div>
+                <select class="language">
+                    <option>Hindi</option>
+                    <option>English</option>
+                    <option>Bengali</option>
+                    <option>Marathi</option>
+                    <option>Punjabi</option>
+                    <option>Tamil</option>
+                    <option>kannada</option>
+                </select>
+                 
+            </div>
+            <!-- <div class="mini-temp" id="miniTemp">30°C</div> -->
+            <!-- <div class="mini-location">Your Village</div> -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="app-main scrollable">
+      <section class="welcome-card">
+        <h2>Namaste, Farmer Ji 👋</h2>
+        <p>Get quick help for crops, diseases, schemes, and water planning – all in one simple app.</p>
+        <button class="btn-primary" onclick="navigateTo('chat.html')">
+          Ask AI Assistant
+        </button>
+      </section>
+
+      <section class="grid-section">
+        <h3 class="section-title">Main Services</h3>
+        <div class="card-grid">
+          <button class="card card-nav" onclick="navigateTo('crops.html')">
+            <span class="card-icon">🌾</span>
+            <h4>Crop Details</h4>
+            <p>Know best crops, climate & fertilizers.</p>
+          </button>
+
+          <button class="card card-nav" onclick="navigateTo('disease.html')">
+            <span class="card-icon">🦠</span>
+            <h4>Crop Diseases</h4>
+            <p>Check symptoms and remedies.</p>
+          </button>
+
+          <button class="card card-nav" onclick="navigateTo('guidance.html')">
+            <span class="card-icon">📋</span>
+            <h4>Farming Guidance</h4>
+            <p>Step-by-step seasonal guide.</p>
+          </button>
+
+          <button class="card card-nav" onclick="navigateTo('schemes.html')">
+            <span class="card-icon">🏛️</span>
+            <h4>Govt Schemes</h4>
+            <p>Find support & subsidies.</p>
+          </button>
+
+          <button class="card card-nav" onclick="navigateTo('chat.html')">
+            <span class="card-icon">🤖</span>
+            <h4>AI Chat</h4>
+            <p>Ask any farming question.</p>
+          </button>
+
+          <button class="card card-nav" onclick="navigateTo('water.html')">
+            <span class="card-icon">💧</span>
+            <h4>Water System</h4>
+            <p>Smart irrigation planning.</p>
+          </button>
+
+          <button class="card card-nav" onclick="navigateTo('weather.html')">
+            <span class="card-icon">🌦️</span>
+            <h4>Weather & Alerts</h4>
+            <p>Plan farming with weather.</p>
+          </button>
+
+          <button class="card card-nav" onclick="scrollToEmergency()">
+            <span class="card-icon">🚨</span>
+            <h4>Emergency Help</h4>
+            <p>Quick contacts and safety tips.</p>
+          </button>
+        </div>
+      </section>
+
+      <section class="weather-section">
+        <h3 class="section-title">Today’s Weather</h3>
+        <div class="card weather-card">
+          <div class="weather-main">
+            <div>
+              <div class="weather-temp" id="homeWeatherTemp">30°C</div>
+              <div class="weather-condition" id="homeWeatherCond">Sunny</div>
+              <div class="weather-location">Near Your Farm</div>
+            </div>
+            <div class="weather-extra">
+              <div>Humidity: <span id="homeWeatherHumidity">55%</span></div>
+              <div>Rain chance: <span id="homeWeatherRain">20%</span></div>
+            </div>
+          </div>
+          <button class="btn-ghost small" onclick="navigateTo('weather.html')">
+            Full weather details →
+          </button>
+        </div>
+      </section>
+
+      <section class="video-section">
+        <h3 class="section-title">Farming Videos</h3>
+        <div class="video-grid">
+          <div class="card video-card">
+            <div class="video-thumb">
+              <span class="play-icon">▶</span>
+            </div>
+            <div class="video-info">
+              <h4>How to improve soil health</h4>
+              <p>Simple tips to increase yield.</p>
+            </div>
+          </div>
+
+          <div class="card video-card">
+            <div class="video-thumb">
+              <span class="play-icon">▶</span>
+            </div>
+            <div class="video-info">
+              <h4>Drip irrigation basics</h4>
+              <p>Save water and improve growth.</p>
+            </div>
+          </div>
+        </div>
+        <p class="info-text small">Demo videos only – connect real YouTube links later.</p>
+      </section>
+
+      <section class="emergency-section" id="emergencySection">
+        <h3 class="section-title">Emergency Help</h3>
+        <div class="card">
+          <p class="info-text">
+            For sudden pest attack, flood, drought, or health emergency, contact:
+          </p>
+          <ul class="simple-list">
+            <li><strong>Krishi Helpline:</strong> 1800-180-1551</li>
+            <li><strong>Weather Help:</strong> Local agriculture office</li>
+            <li><strong>Medical Emergency:</strong> 108</li>
+          </ul>
+          <button class="btn-outline full-width">
+            Call Local Agriculture Officer
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item active" onclick="navigateTo('index.html')">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('chat.html')">
+        <span class="nav-icon">🤖</span>
+        <span class="nav-label">AI Chat</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('crops.html')">
+        <span class="nav-icon">🌾</span>
+        <span class="nav-label">Crops</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('schemes.html')">
+        <span class="nav-icon">🏛️</span>
+        <span class="nav-label">Schemes</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('profile.html')">
+        <span class="nav-icon">👤</span>
+        <span class="nav-label">Profile</span>
+      </button>
+    </nav>
+  </div>
+</body>
+</html>

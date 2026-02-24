@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Crops – Kisan Sathi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="crops">
+  <div class="app-shell">
+    <header class="app-header simple">
+      <button class="back-btn" onclick="navigateTo('index.html')">←</button>
+      <div>
+        <h1 class="app-title">Crop Details</h1>
+        <p class="app-subtitle">Know your crops better</p>
+      </div>
+    </header>
+
+    <main class="app-main scrollable">
+      <div class="search-bar-wrapper">
+        <input
+          type="text"
+          id="cropSearch"
+          placeholder="Search crop name (e.g. Wheat, Rice)..."
+          oninput="filterCrops()"
+        />
+      </div>
+
+      <section id="cropList" class="card-list">
+        <!-- Cards populated from script.js -->
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item" onclick="navigateTo('index.html')">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('chat.html')">
+        <span class="nav-icon">🤖</span>
+        <span class="nav-label">AI Chat</span>
+      </button>
+      <button class="nav-item active" onclick="navigateTo('crops.html')">
+        <span class="nav-icon">🌾</span>
+        <span class="nav-label">Crops</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('schemes.html')">
+        <span class="nav-icon">🏛️</span>
+        <span class="nav-label">Schemes</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('profile.html')">
+        <span class="nav-icon">👤</span>
+        <span class="nav-label">Profile</span>
+      </button>
+    </nav>
+  </div>
+</body>
+</html>

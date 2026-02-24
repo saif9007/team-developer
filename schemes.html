@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Govt Schemes – Kisan Sathi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body data-page="schemes">
+  <div class="app-shell">
+    <header class="app-header simple">
+      <button class="back-btn" onclick="navigateTo('index.html')">←</button>
+      <div>
+        <h1 class="app-title">Government Schemes</h1>
+        <p class="app-subtitle">Find support for your farm</p>
+      </div>
+    </header>
+
+    <main class="app-main scrollable">
+      <div class="tabs">
+        <button class="tab active" data-tab="central" onclick="switchSchemeTab('central')">Central</button>
+        <button class="tab" data-tab="state" onclick="switchSchemeTab('state')">State</button>
+      </div>
+
+      <section id="centralSchemes" class="card-list schemes-list">
+        <article class="card scheme-card">
+          <h3>PM-KISAN Samman Nidhi</h3>
+          <p>Direct income support to small and marginal farmers.</p>
+          <p><strong>Eligibility:</strong> All landholding farmer families with cultivable land.</p>
+          <button class="btn-outline small">Apply (Demo)</button>
+        </article>
+
+        <article class="card scheme-card">
+          <h3>Pradhan Mantri Fasal Bima Yojana</h3>
+          <p>Crop insurance to protect from natural calamities.</p>
+          <p><strong>Eligibility:</strong> All farmers growing notified crops.</p>
+          <button class="btn-outline small">Apply (Demo)</button>
+        </article>
+      </section>
+
+      <section id="stateSchemes" class="card-list schemes-list" hidden>
+        <article class="card scheme-card">
+          <h3>State Irrigation Support</h3>
+          <p>Subsidy on drip and sprinkler systems.</p>
+          <p><strong>Eligibility:</strong> Farmers with land records in the state.</p>
+          <button class="btn-outline small">Apply (Demo)</button>
+        </article>
+      </section>
+
+      <section class="card">
+        <h3>Check Your Eligibility</h3>
+        <form onsubmit="checkEligibility(event)">
+          <label>
+            Land Size (in acres)
+            <input type="number" id="eligLand" min="0" step="0.1" required />
+          </label>
+
+          <label>
+            Farmer Type
+            <select id="eligType">
+              <option value="small">Small / Marginal</option>
+              <option value="large">Large</option>
+            </select>
+          </label>
+
+          <label>
+            State
+            <input type="text" id="eligState" placeholder="e.g. Maharashtra" required />
+          </label>
+
+          <button type="submit" class="btn-primary full-width">
+            Check Eligibility
+          </button>
+        </form>
+
+        <div id="eligResult" class="elig-result"></div>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="nav-item" onclick="navigateTo('index.html')">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Home</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('chat.html')">
+        <span class="nav-icon">🤖</span>
+        <span class="nav-label">AI Chat</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('crops.html')">
+        <span class="nav-icon">🌾</span>
+        <span class="nav-label">Crops</span>
+      </button>
+      <button class="nav-item active" onclick="navigateTo('schemes.html')">
+        <span class="nav-icon">🏛️</span>
+        <span class="nav-label">Schemes</span>
+      </button>
+      <button class="nav-item" onclick="navigateTo('profile.html')">
+        <span class="nav-icon">👤</span>
+        <span class="nav-label">Profile</span>
+      </button>
+    </nav>
+  </div>
+</body>
+</html>
