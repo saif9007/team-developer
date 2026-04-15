@@ -170,55 +170,252 @@ function chatQuick(text) {
 //   }
 // 
 // Gemini API call (frontend – key will be visible in browser)
+// async function analyzeViaApi(query) {
+//   const API_KEY = "null";
+//   try {
+//     const res = await fetch(
+//       `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${null}`,
+//       {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify({
+//           contents: [
+//             {
+//               parts: [
+//                 {
+//                   text:
+//                     "You are KrishiMitra, a friendly agriculture assistant for Indian farmers. " +
+//                     "Answer briefly and clearly in simple language.\n\n" +
+//                     "Farmer question: " +
+//                     query
+//                 }
+//               ]
+//             }
+//           ]
+//         })
+//       }
+//     );
+
+//     const data = await res.json();
+//     console.log("Gemini raw response:", res.status, data);
+
+//     if (!res.ok) {
+//       // Return error message so UI can show it
+//       return `API error ${res.status}: ${data.error?.message || "Unknown error"}`;
+//     }
+
+//     const text =
+//       data.candidates &&
+//       data.candidates[0] &&
+//       data.candidates[0].content &&
+//       data.candidates[0].content.parts
+//         .map(p => p.text || "")
+//         .join("\n");
+
+//     return text || "AI returned empty response.";
+//   } catch (err) {
+//     console.error("Gemini API error:", err);
+//     return "Network or CORS error when calling Gemini.";
+//   }
+// }
+// async function analyzeViaApi(query) {
+//   const API_KEY = "null";
+
+//       try {
+//       const res = await fetch(
+//       "https://api.groq.com/openai/v1/chat/completions",
+//       {
+//         method: "POST",
+//         headers: {
+//           "Authorization": `Bearer ${API_KEY}`,
+//           "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify({
+//           model: "llama3-8b-8192",
+//           messages: [
+//             {
+//               role: "system",
+//               content: "You are KrishiMitra, a friendly agriculture assistant for Indian farmers. Answer briefly in simple language."
+//             },
+//             {
+//               role: "user",
+//               content: query
+//             }
+//           ]
+//         })
+//       }
+//     );
+
+//     const data = await res.json();
+//     console.log(data);
+//   } catch (err) {
+//     console.error(err);
+//   }
+// }
+// async function analyzeViaApi(query) {
+//   const API_KEY = "new_api key"; // ⚠️ Replace with NEW key
+
+//   try {
+//     const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+//       method: "POST",
+//       headers: {
+//         "Authorization": `Bearer ${API_KEY}`,
+//         "Content-Type": "application/json"
+//       },
+//       body: JSON.stringify({
+//         model: "llama-3.3-70b-specdec",
+//         messages: [
+//           {
+//             role: "system",
+//             content: "You are KrishiMitra, a friendly agriculture assistant for Indian farmers. Answer briefly in simple language."
+//           },
+//           {
+//             role: "user",
+//             content: query
+//           }
+//         ]
+//       })
+//     });
+
+//     const data = await res.json();
+
+//     // 🔍 Show full response for debugging
+//     console.log("API RESPONSE:", data);
+
+//     // ❌ Handle API error properly
+//     if (!res.ok) {
+//       return "API Error: " + (data.error?.message || "Unknown error");
+//     }
+
+//     // ✅ Return actual AI response
+//     return data.choices[0].message.content;
+
+//   } catch (err) {
+//     console.error("FETCH ERROR:", err);
+//     return "Network error or API issue";
+//   }
+// }
+
+// async function analyzeViaApi(query) {
+//   const API_KEY = "APIkey";
+
+//   try {
+//     const res = await fetch(
+//       `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${API_KEY}`,
+//       {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify({
+//           contents: [
+//             {
+//               parts: [
+//                 {
+//                   text:
+//                     "You are KrishiMitra, a friendly agriculture assistant for Indian farmers. Answer briefly in simple language.\n\nFarmer question: " +
+//                     query
+//                 }
+//               ]
+//             }
+//           ]
+//         })
+//       }
+//     );
+
+//     const data = await res.json();
+//     console.log("API RESPONSE:", data);
+
+//     if (!res.ok) {
+//       return "API Error: " + (data.error?.message || "Unknown error");
+//     }
+
+//     return data.candidates[0].content.parts[0].text;
+
+//   } catch (err) {
+//     console.error("ERROR:", err);
+//     return "Network error or API issue";
+//   }
+// }
+// 
+// async function analyzeViaApi(query) {
+//   const API_KEY = "null";
+
+//   try {
+//     const res = await fetch(
+//       `https://generativelanguage.googleapis.com/v1beta/models/gemini-1.0-pro:generateContent?key=${API_KEY}`,
+//       {
+//         method: "POST",
+//         headers: {
+//           "Content-Type": "application/json"
+//         },
+//         body: JSON.stringify({
+//           contents: [
+//             {
+//               parts: [
+//                 {
+//                   text: query
+//                 }
+//               ]
+//             }
+//           ]
+//         })
+//       }
+//     );
+
+//     const data = await res.json();
+//     console.log("API RESPONSE:", data);
+
+//     if (!res.ok) {
+//       return "API Error: " + (data.error?.message || "Unknown error");
+//     }
+
+//     return data.candidates?.[0]?.content?.parts?.[0]?.text || "No response";
+
+//   } catch (err) {
+//     console.error("ERROR:", err);
+//     return "Network error";
+//   }
+// }
 async function analyzeViaApi(query) {
-  const API_KEY = "AIzaSyCvEpVKSqLUHpfsSTNTiKeaPB6M9Qrji1g"; // put your real key here
+  const API_KEY = "API_KEY_HERE";
 
   try {
-    const res = await fetch(
-      `https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${API_KEY}`,
-      {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [
-                {
-                  text:
-                    "You are KrishiMitra, a friendly agriculture assistant for Indian farmers. " +
-                    "Answer briefly and clearly in simple language.\n\n" +
-                    "Farmer question: " +
-                    query
-                }
-              ]
-            }
-          ]
-        })
-      }
-    );
+    const res = await fetch("https://openrouter.ai/api/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Authorization": `Bearer ${API_KEY}`,
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({
+        model: "openrouter/auto",
+        messages: [
+          {
+            role: "system",
+            content: "You are KrishiMitra, a friendly agriculture assistant for Indian farmers. Answer briefly in simple language."
+          },
+          {
+            role: "user",
+            content: query
+          }
+        ]
+      })
+    });
 
     const data = await res.json();
-    console.log("Gemini raw response:", res.status, data);
+    console.log("API RESPONSE:", data);
 
     if (!res.ok) {
-      // Return error message so UI can show it
-      return `API error ${res.status}: ${data.error?.message || "Unknown error"}`;
+      return "API Error: " + (data.error?.message || "Unknown error");
     }
 
-    const text =
-      data.candidates &&
-      data.candidates[0] &&
-      data.candidates[0].content &&
-      data.candidates[0].content.parts
-        .map(p => p.text || "")
-        .join("\n");
+    return data.choices[0].message.content;
 
-    return text || "AI returned empty response.";
   } catch (err) {
-    console.error("Gemini API error:", err);
-    return "Network or CORS error when calling Gemini.";
+    console.error("ERROR:", err);
+    return "Network error";
   }
 }
 async function sendChatMessage() {
